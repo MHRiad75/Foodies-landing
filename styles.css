@@ -1,4 +1,5 @@
 /* styles.css */
+/*Section 1 */
 * {
   margin: 0;
   padding: 0;
@@ -298,3 +299,198 @@ body {
   display: block;
 }
 
+/* section 3*/
+/* -----------------------------------
+   Section Title Styling
+------------------------------------ */
+.food-features {
+    max-width: 1100px;      /* FIX: center width */
+    margin: 0 auto;         /* FIX: center align entire section */
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #d1f7e7;
+    color: #00c07f;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 14px;
+}
+
+.food-features h1 {
+    font-size: 36px;
+    margin: 15px 0 40px;
+}
+
+
+
+/* -----------------------------------
+   FIXED PERFECT 2-COLUMN GRID
+------------------------------------ */
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    border: 1px solid #d1f7e7;
+}
+
+
+
+/* -----------------------------------
+   Image Box
+------------------------------------ */
+.img-box {
+    width: 100%;
+    height: 260px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #d1f7e7;
+}
+
+
+
+/* -----------------------------------
+   Card Box
+------------------------------------ */
+.card {
+    background: #eafff5;
+    padding: 30px;
+    border: 1px solid #d1f7e7;
+    display: flex;
+    align-items: center;
+}
+
+.text-box h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.text-box p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 18px;
+}
+
+
+
+/* -----------------------------------
+   Button
+------------------------------------ */
+.btn {
+    background-color: #d1f7e7;
+    color: #00c07f;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #00c07f;
+    color: #fff;
+}
+
+/* Section four wrapper */
+
+.popular-products {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Title */
+.section-tag {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.section-title {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+/* Grid layout */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Card */
+.product-card {
+    border: 2px solid #d8f3e8;
+    border-radius: 15px;
+    padding: 0;              /* ⭐ padding image এর আগে রাখব না */
+    background: #fff;
+    transition: 0.3s;
+    overflow: hidden;        /* ⭐ image কখনো বাইরে যাবে না */
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Image */
+   .product-card img {
+    width: 120px;         /* fixed round size */
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;   /* ⭐ FULL ROUND */
+    display: block;
+    margin: 20px auto 10px auto;  /* center align */
+}
+
+
+/* Content wrapper */
+.product-card .content {
+    padding: 20px;           /* ⭐ এখন padding content এ */
+}
+
+/* Rating stars */
+.rating {
+    color: #00c07f;
+    margin: 10px 0;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+/* Text */
+.product-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 5px;
+}
+
+.new-price {
+    color: #00c07f;
+    font-weight: bold;
+}
+
+/* Button */
+.buy-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    border: 2px solid #00c07f;
+    color: #00c07f;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    background: #00c07f;
+    color: #fff;
+}
